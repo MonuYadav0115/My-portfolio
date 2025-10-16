@@ -17,6 +17,9 @@
   <nav class="navbar">
     <div class="container">
       <h1 class="logo">Monu Yadav</h1>
+
+      <div class="menu-icon" id="menu-icon">&#9776;</div>
+
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
@@ -116,6 +119,16 @@
   <footer>
     <p>© 2025 Monu Yadav. All rights reserved.</p>
   </footer>
+  <!-- js -->
+   <script>
+  const menuIcon = document.getElementById('menu-icon');
+  const navLinks = document.getElementById('nav-links');
+
+  menuIcon.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+</script>
+
  
 </body>
 </html>
